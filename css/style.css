@@ -1,0 +1,426 @@
+@font-face {
+  font-family: "Сuprum";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Сuprum"),
+       url("/fonts/cuprum.woff2") format("woff2"),
+       url("/fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PS Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PS Sans"),
+       url("/fonts/ptsans.woff2") format("woff2"),
+       url("/fonts/ptsans.woff") format("woff");
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-light-black: #161D29;
+  --basic-extra-grey: #293449;
+  --basic-grey: #32425c;
+  --basic-light-grey: #f1f5f7; 
+  --basic-light-grey-2: #f3f7f9; 
+  --basic-light-grey-3: #c5c5c5;
+  --basic-light-grey-4: #a9a9a9;
+  --basic-white: #ffffff;
+  --basic-beige: #f9f5f0;
+  --basic-red: #ee3643;
+  --basic-red-2:#ca2c37;
+  --basic-red-3: #ba2732;
+  --basic-light-green: #8ed78f;
+  --basic-green: #63a63e;
+  --basic-green-2: #5fbb2d;
+  --basic-green-3: #518534;
+  --basic-dark-green:#367315;
+  --basic-yellow: #ffbf47;
+  --basic-blue: #3bbce3;
+  --basic-violet: #dc91d8;
+  --special-yellow: #ffd180;
+  }
+
+/*----------------------  body  -------------------------------------*/
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Сuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-white);
+} 
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-body a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.page-body ul {
+  list-style: none;
+}
+/*----------------------  common  -------------------------------------*/
+.main-btn {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+}
+
+/*----------------------  header  -------------------------------------*/
+.main-header {
+  background-color: var(--basic-light-grey); 
+}  
+
+.header-part1 {
+  background-color: var(--basic-extra-grey);
+}  
+
+.header-order {
+  background-color: var(--basic-green);
+}
+
+.order a:hover {                     
+  background-color: var(--basic-green-2);
+}
+
+.header-part1 a:focus {
+  opacity: 0.5;
+}
+
+.bookmark-basket a:focus {
+  background-color: var(--basic-light-black);
+}
+
+.header-part2 a {
+  color: var(--basic-red);
+}
+
+.login-registration a {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.login-registration a:hover {
+  color: var(--basic-red);
+}
+
+.login-registration a:focus {
+  color: var(--basic-green-3);
+}
+
+.title-desc {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: var(--basic-red);
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  border: 3px solid var(--basic-white);
+}
+
+.header-address{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-grey);
+}
+
+.main-nav {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--basic-grey);
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: var(--basic-extra-grey);
+} 
+
+.main-nav a:focus {
+  opacity: 0.5;
+} 
+
+/*----------------------  main  -------------------------------------*/
+.container{
+  background-color: var(--basic-white);
+}
+
+.promo-block h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.promo-block a {
+  text-transform: uppercase;
+}
+
+.promo-block a:hover {
+  background-color: rgba(197,197,197,0.3);
+}
+
+.promo-block a:focus {
+  background-color: rgba(169,169,169,0.3);
+}
+
+.materials {
+  background-color: var(--basic-yellow);
+}
+
+.tool {
+  background-color: var(--basic-blue);
+}
+
+.machine {
+  background-color: var(--basic-violet);
+}
+
+.discounts {
+  background-color: var(--basic-light-green); 
+}
+
+.delivery {
+  background-color: var(--basic-yellow);
+}
+
+.btn-promo {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.slider-product h2 {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slide1 {
+  background-color: var(--basic-light-grey);
+  background-image: url("img/man-drill.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.slide2 {
+  background-color: var(--basic-light-grey);
+  background-image: url("img/man-perforator.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.slider-product a:hover {
+  background-color:  var(--basic-red-2);
+}
+
+.slider-product a:focus {
+  background-color:  var(--basic-red-3);
+}
+
+.popular-title h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color : var(--basic-grey);
+}
+
+.popular-title {
+  background-color: var(--basic-beige);
+}
+
+.pop-manufacturers img:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0,0,0,0.15));
+}
+
+.pop-manufacturers img:focus {
+  filter: drop-shadow(0px 4px 20px rgba(0,0,0,0.15));
+}
+
+.list-products h3 {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.price {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.price-old {
+  color: var(--basic-light-grey-4);
+  text-decoration: line-through;
+}
+
+.price-new {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.btn-on-card {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.btn-buy {
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--basic-dark-green); 
+  border-radius: 2px;
+}
+
+.btn-buy:hover {
+  background-color: var(--basic-green-2);   
+}
+
+.btn-buy:focus {
+  background-color: var(--basic-dark-green-3);
+}
+
+.bookmark a {
+  color: var(--basic-grey);
+}
+
+.btn-bookmark {
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-green);
+}
+
+.btn-bookmark:hover {
+  border: 3px solid var(--basic-grey);
+}
+
+.btn-bookmark:focus {
+  border: 3px solid var(--basic-grey);
+  background-color: rgba(255,255,255,0.5);
+}
+
+.services {
+  background-color:  var(--basic-light-grey); 
+}
+
+.services h2, h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.services p {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.services-list a {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.service-selected a {
+  background-color:  var(--basic-white); 
+  color: var(--basic-black);
+}
+
+.service a {
+  background-color: var(--basic-grey); 
+}
+
+.credit-application {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.about-us {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.about-us h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-us p {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/*----------------------  footer  -------------------------------------*/
+.main-footer {
+  background-color: var(--basic-grey);
+}
+
+.footer-part1,
+.footer-part2 {
+  background-color: var(--basic-grey);
+}
+
+.footer-nav1 a {
+  color: var(--basic-light-grey);
+}
+
+.footer-nav2 a {
+  color: var(--special-yellow);
+}
+
+.footer-address,
+.footer-phone a {
+  color: var(--basic-light-grey-2);
+}
+
+.footer-nav1 a:hover,
+.footer-nav2 a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav1 a:focus,
+.footer-nav2 a:focus {
+  opacity: 0.5;
+}
+
+.footer-part3 {
+  background-color: var(--basic-extra-grey);
+}
+
+.footer-part3 p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-part3 a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-yellow);
+}
+
+.footer-part3 a:hover {
+  text-decoration: underline;
+}
+
+.footer-part3 a:focus {
+  color: var(--basic-red);
+}
