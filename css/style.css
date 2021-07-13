@@ -19,6 +19,7 @@
 :root {
   --basic-black: #000000;
   --basic-light-black: #161D29;
+  --basic-light-black-2: #444444;
   --basic-extra-grey: #293449;
   --basic-grey: #32425c;
   --basic-light-grey: #f1f5f7; 
@@ -26,8 +27,11 @@
   --basic-light-grey-3: #c5c5c5;
   --basic-light-grey-4: #a9a9a9;
   --basic-light-grey-5: #f1f1f1;
+  --basic-light-grey-6: #e5e5e5;
+  --basic-light-grey-7: #eaeaea;
   --basic-white: #ffffff;
   --basic-beige: #f9f5f0;
+  --basic-beige-2: #f7f3ec;
   --basic-red: #ee3643;
   --basic-red-2:#ca2c37;
   --basic-red-3: #ba2732;
@@ -42,7 +46,6 @@
   --special-yellow: #ffd180;
   }
 
-/*----------------------  body  -------------------------------------*/
 .page-body {
   min-width: 960px;
   margin: 0;
@@ -68,7 +71,7 @@
 .page-body ul {
   list-style: none;
 }
-/*----------------------  common  -------------------------------------*/
+
 .main-btn {
   font-size: 14px;
   line-height: 18px;
@@ -76,7 +79,6 @@
   background-color: var(--basic-red);
 }
 
-/*----------------------  header  -------------------------------------*/
 .main-header {
   background-color: var(--basic-light-grey); 
 }  
@@ -153,7 +155,6 @@
   opacity: 0.5;
 } 
 
-/*----------------------  main  -------------------------------------*/
 .container{
   background-color: var(--basic-white);
 }
@@ -258,6 +259,14 @@
   color: var(--basic-black);
 }
 
+.catalog-item {
+  border: 1px solid var(--basic-light-grey-7);
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+}
+
 .price {
   font-family: "PS Sans", Arial, sans-serif;
   font-size: 17px;
@@ -273,6 +282,11 @@
 .price-new {
   color: var(--basic-white);
   background-color: var(--basic-red);
+}
+
+
+.new-product a {
+  text-transform: uppercase;
 }
 
 .btn-on-card {
@@ -291,7 +305,7 @@
 }
 
 .btn-buy:focus {
-  background-color: var(--basic-dark-green-3);
+  background-color: var(--basic-green-3);
 }
 
 .bookmark a {
@@ -308,8 +322,8 @@
 }
 
 .btn-bookmark:focus {
-  border: 3px solid var(--basic-grey);
-  background-color: rgba(255,255,255,0.5);
+  border: 3px solid var(--basic-grey); 
+  opacity: 0.5;
 }
 
 .services {
@@ -371,7 +385,29 @@
   font-weight: 700;
 }
 
-/*----------------------  footer  -------------------------------------*/
+.pagination-list a {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: 1px solid var(--basic-light-grey-6);
+}
+
+.pagination-item a:focus {
+  border: 1px solid var(--basic-red);
+}
+
+.pagination-item-current a {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
 .main-footer {
   background-color: var(--basic-grey);
 }
@@ -425,4 +461,196 @@
 
 .footer-part3 a:focus {
   color: var(--basic-red);
+}
+
+.selected-basket {
+  background-color: var(--basic-red);
+}
+
+.header-account{
+  background-color: var(--basic-white);
+}
+
+.account a {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.account a:focus,
+.account-order a:focus {
+  color: var(--basic-light-grey-3);
+}
+
+.account-order a {
+  color: var(--basic-grey);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.account-order a:hover {
+  color: var(--basic-red);
+}
+
+.modal-basket {
+  background-color: var(--basic-white);
+}
+
+.modal-basket h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.btn-modal {
+  background-color: var(--basic-light-grey-5);
+}
+
+.modal-go-shopping {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+.continuation a {
+  color: var(--basic-black);
+}
+
+.line {
+  background-color: var(--basic-red);
+  color: var(--basic-red);
+  font-size: 2px;
+  line-height: 7px;
+}
+
+.breadcrumbs a {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.main-title {
+  background-color: var(--basic-light-grey);
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-grey);
+  text-transform: uppercase;
+}
+
+.filter-sort {
+  background-color: var(--basic-beige-2);
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.sort {
+  background-color: var(--basic-beige-2);
+}
+
+.sort-param a {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.selected-sort-param a {
+  color: var(--basic-red);
+}
+
+.noselected-sort-param a {
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-red);
+}
+
+.noselected-sort-param a:hover {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.h-price {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter-input-range {
+  background-color: var(--basic-beige-2);
+}
+
+.filter-input-text {
+  background-color: var(--basic-beige-2);
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.dash {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-light-black-2);
+}
+
+.h-legend {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.filter {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.btn-show {
+  background-color: var(--basic-white);
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+  border: 1px solid var(--basic-light-grey-6);
+  text-transform: uppercase;
+}
+
+.resume {
+  background-color: var(--basic-light-grey);
+}
+
+.resume-desc {
+  font-family: "PS Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.modal-desc {
+  color: var(--basic-black);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
 }
